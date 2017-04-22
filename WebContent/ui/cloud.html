@@ -1,0 +1,300 @@
+<html>
+<head>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="stylesheet" href="../bootstrap-3.3.7-dist/css/bootstrap.css">
+<link rel="stylesheet" href="cloud.css">
+<script type="text/javascript" src="../jquery-3.2.0.js"></script>
+<script type="text/javascript"
+	src="../bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+<script type="text/javascript">
+	$(function() {
+		$('body').scrollspy({
+			target:'header .navbar',
+			offset:50
+		});
+		$(".carousel").carousel({
+			interval : 2000
+		});
+
+		var qty = $("#imcarousel .item").length
+		console.log(qty)
+		var ind = "";
+		for (var i = 0; i < qty; i++) {
+			if (i == 0) {
+				ind += "<li data-target='#imcarousel' data-slide-to='"+i+"' class='active'>"
+			} else {
+				ind += "<li data-target='#imcarousel' data-slide-to='"+i+"'>"
+			}
+		}
+
+		$("#imcarousel ol").append(ind);
+	});
+</script>
+</head>
+<body>
+	<section>
+		<div>
+			<p class=""></p>
+			<nav>
+				<ol class="breadcrumb">
+					<li><a href="#">Twitter</a>
+					<li><a href="#">Skype</a>
+					<li><a href="#">Contact Us</a>
+				</ol>
+			</nav>
+		</div>
+	</section>
+	<header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle navbar-collapse"
+						data-toggle="collapse" data-target="#list_nav"
+						aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span> <span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span>
+					</button>
+				</div>
+			</div>
+			<div id="list_nav" class="collapse navbar-collapse">
+				<ul class="nav nav-tabs nav-justified">
+					<li class=static><a href="#services">Services</a></li>
+					<li><a href="#products">Products</a></li>
+					<li><a href="#solutions">Solutions</a></li>
+					<li class="dropdown"><a class="dropdown-toggle"
+						data-toggle="dropdown">Company<span class=caret></span></a>
+						<ul class="dropdown-menu">
+							<li>Xilinx</li>
+							<li>Altera</li>
+						</ul></li>
+				</ul>
+			</div>
+
+		</nav>
+	</header>
+	<section  class="top-section">
+		<div class="info">
+			<h1>Cloud Strategy</h1>
+			<h3>Strategic Software for all</h3>
+			<h6>
+				<a href="#">LEARN MORE</a>
+			</h6>
+		</div>
+		<div class="carousel slide hidden-xs visible-sm visible-md visible-lg"
+			id="imcarousel">
+			<ol class="carousel-indicators">
+				<!-- 				<li data-target="#imcarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#imcarousel" data-slide-to="1"></li>
+				<li data-target="#imcarousel" data-slide-to="2"></li>
+				<li data-target="#imcarousel" data-slide-to="3"></li> -->
+			</ol>
+			<div class="carousel-inner carousel-containter">
+				<div class="item active">
+					<img alt="image" src="img/c1.jpg">
+				</div>
+				<div class="item">
+					<img alt="image" src="img/c2.jpg">
+				</div>
+				<div class="item">
+					<img alt="image" src="img/c3.jpg">
+				</div>
+				<div class="item">
+					<img alt="image" src="img/c4.jpg">
+				</div>
+				<a class="carousel-control left" href="#imcarousel"
+					data-role="button" data-slide="prev"> <span
+					class="glyphicon glyphicon-chevron-left"></span>
+				</a> <a class="carousel-control right" href="#imcarousel"
+					data-role="button" data-slide="next"> <span
+					class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+		</div>
+
+	</section>
+	<div id="layout" class="container-fluid main-container">
+
+		<section>
+			<div>
+				<img src="img/logo.jpg">
+
+				<h4 id="services">Our Services</h4>
+				<p>Strategy is important because the resources available to
+					achieve these goals are usually limited. Strategy generally
+					involves setting goals, determining actions to achieve the goals,
+					and mobilizing resources to execute the actions. A strategy
+					describes how the ends (goals) will be achieved by the means
+					(resources).</p>
+				<div class=row>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="img/s1.jpg">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="img/s2.jpg">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="img/s3.jpg">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="img/s4.jpg">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="img/s4.jpg">
+					</div>
+					<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+						<img src="img/s4.jpg">
+					</div>
+				</div>
+
+				<h4 id="products">Our Products</h4>
+				<p>The order in which real or complex numbers are multiplied has
+					no bearing on the product; this is known as the commutative law of
+					multiplication. When matrices or members of various other
+					associative algebras are multiplied, the product usually depends on
+					the order of the factors. Matrix multiplication, for example, and
+					multiplication in other algebras is in general non-commutative.</p>
+				<div class=row>
+					<div class="col-md-6">
+						<div class=row>
+							<div class="col-md-9">
+								<img src="img/s1.jpg">
+							</div>
+							<div class="col-md-3">Content</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class=row>
+							<div class="col-md-9">
+								<img src="img/s1.jpg">
+							</div>
+							<div class="col-md-3">Content</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class=row>
+							<div class="col-md-9">
+								<img src="img/s1.jpg">
+							</div>
+							<div class="col-md-3">Content</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class=row>
+							<div class="col-md-9">
+								<img src="img/s1.jpg">
+							</div>
+							<div class="col-md-3">Content</div>
+						</div>
+					</div>
+				</div>
+				<h4 id="solitions">Our Solutions</h4>
+				<p>In chemistry, a solution is a homogeneous mixture composed of
+					two or more substances. In such a mixture, a solute is a substance
+					dissolved in another substance, known as a solvent. The mixing
+					process of a solution happens at a scale where the effects of
+					chemical polarity are involved, resulting in interactions that are
+					specific to solvation. The solution assumes the phase of the
+					solvent when the solvent is the larger fraction of the mixture, as
+					is commonly the case. The concentration of a solute in a solution
+					is the mass of that solute expressed as a percentage of the mass of
+					the whole solution.</p>
+
+				<h4>Our Company</h4>
+				<p>The English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), rThe English word company has its origins in the Old French
+					military term compaignie (first recorded in 1150), meaning a "body
+					of soldiers",[1] and originally from the Late Latin word companio
+					"companion, one who eats bread [pane] with you", first attested in
+					the Lex Salica as a calque of the Germanic expression *gahlaibo
+					(literally, "with bread"), r</p>
+			</div>
+			<div class=row>
+				
+			</div>
+		</section>
+	</div>
+</body>
+</html>

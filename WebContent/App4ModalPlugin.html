@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<meta name=viewport content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+	<script type="text/javascript" src="jquery-3.2.0.js"></script>
+	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+<body>
+
+	<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		Trigger Modal Example
+	</button>
+		
+	<!-- My Modal -->
+	<div class="modal fade" id="myModal" role="dialog" aria-hidden=true>
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type=button class=close data-dismiss=modal aria-hidden=true>&times
+					
+					</button>
+				</div>
+				<div class="modal-body">
+				
+				</div>
+				<div class="modal-footer">
+				
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function () { $('#myModal').modal({
+			keyboard: true
+		})});
+	</script>
+	<script>
+		$(function () {$('#myModal').on('shown.bs.modal', function() {
+			alert('hi');
+		})});
+	</script>
+</body>
+</html>

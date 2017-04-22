@@ -1,0 +1,51 @@
+@media (min-width:758px) and (max-width:1200px) {
+	.info{
+		z-index:2;
+		position:relative;
+		width:100%;
+		top:50%;
+		left:10%;
+	}	
+}
+
+
+.info{
+		z-index:2;
+		position:relative;
+		width:100%;
+		left:20px;
+}	
+
+.top-section{
+	height:300px;
+}
+
+.carousel{
+	margin-bottom:60px;
+	position:absolute;
+	z-index:1;
+	width:100%;
+}
+
+.carousel img{
+	top:0;
+	left:0;
+	width:100%;
+	min-height: 100px;
+}
+
+.carousel-containter{
+	position :relative;
+	height:200px;
+}
+
+section h1 {
+	clear:both;
+}
+header {
+	margin-top: 50px;
+}
+
+.main-container{
+	position:relative;
+}
